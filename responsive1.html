@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9b204b830f.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Responsive Web</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'montserrat';
+            /* font-family: 'lato';?*/
+            /* font-family: "Lato", sans-serif; */
+        }
+
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            /* margin: 0; */
+
+        }
+
+
+        .parent {
+            height: 100vh;
+            width: 100vw;
+            /* background-color: cornsilk; */
+
+        }
+
+
+        .parent .nav {
+
+            width: 100%;
+            height: 10vh;
+            /* background-color: aqua; */
+            border-bottom: 1px solid #dadada;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .parent .nav_content {
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+            text-transform: capitalize;
+            margin: 0 2vw;
+
+            font-size: 1vw;
+        }
+
+
+        .parent .nav h1 {
+            font-size: 2vw;
+            margin: 0 2vw;
+
+        }
+
+
+        .parent .nav_content i {
+            display: none;
+        }
+
+        .parent .nav_content button {
+            padding: 0.5vw 1.2vw;
+            background-color: #FF735C;
+            border: none;
+            color: #fff;
+            text-transform: capitalize;
+            border-radius: 5px;
+        }
+
+
+        .parent .content {
+
+            height: calc(100vh - 10vh);
+            width: 100vw;
+            /* background-color: red; */
+            display: flex;
+        }
+
+        .parent .content .left {
+
+            height: 100%;
+            width: 50vw;
+            /* background-color: aqua; */
+
+        }
+
+
+        .parent .content .left h1 {
+
+            font-size: 4vw;
+            /* margin: 0 2vw; */
+            margin: 3vw 2vw;
+            line-height: 4vw;
+            font-weight: bolder;
+        }
+
+        .parent .content .left h1 span {
+
+            color: #FF735C;
+        }
+
+        .parent .content .left p {
+            font-size: 1.5vw;
+            margin: 3vw 2vw;
+        }
+
+        .parent .content .left button {
+            padding: 0.5vw 2vw;
+            border: none;
+            text-transform: capitalize;
+            color: #fff;
+            font-size: 2vw;
+            margin: 0 2vw;
+            border-radius: 5px;
+            background-color: #FF735C;
+        }
+
+
+
+
+        .parent .content .right {
+            height: 100%;
+            width: 50vw;
+            background-color: lightcoral;
+        }
+
+        .parent .content .right img {
+            /* object-fit:; */
+            width: 100%;
+            height: 100%;
+        }
+
+
+
+        @media (max-width:600px) {
+
+            .parent .nav h1 {
+                font-size: 5vw;
+                margin: 0 2vw;
+
+            }
+
+            .parent .nav {
+                height: 7vh;
+            }
+
+
+            .parent .nav_content h4 {
+
+                display: none;
+            }
+
+            .parent .nav_content i {
+                display: block;
+                font-weight: 700;
+                font-size: 3vw;
+                margin: 0 2vw;
+            }
+
+
+            .parent .nav_content button {
+                background-color: #FF735C;
+        
+                padding: 1vw 3vw;
+        
+
+            }
+
+
+            .parent .nav_content button {
+                display: none;
+            }
+
+
+            .parent .content {
+                height: calc(100vh - 7vh);
+                display: flex;
+                flex-direction: column;
+            }
+
+            .parent .content .left {
+
+                height: 50%;
+                width: 100vw;
+            
+
+            }
+
+
+
+
+            .parent .content .left h1 {
+                margin-top: 6vw;
+                font-size: 10vw;
+                line-height: 9vw;
+            }
+
+            .parent .content .left p {
+                margin-top: 6vw;
+                font-size: 3.5vw;
+                line-height: 4vw;
+            }
+
+
+            .parent .content .right {
+                height: 50%;
+                width: 100vw;
+                /* background-color: lightcoral; */
+            }
+
+
+            .parent .content .right img {
+                /* object-fit:; */
+                width: 100%;
+                height: 100%;
+            }
+
+            .parent .content .left button {
+            
+                margin-top: 7vw;
+            font-size: 3vw;
+            border-radius: 5px;
+            background-color: #FF735C;
+        }
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="parent">
+
+        <div class="nav">
+            <h1>Logo</h1>
+            <div class="nav_content">
+                <h4>store</h4>
+                <h4>courses</h4>
+                <h4>carrier</h4>
+                <h4>blog</h4>
+                <h4>account</h4>
+
+                <button>sign in</button>
+                <i class="ri-menu-3-line"></i>
+
+
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="left">
+                <h1>Learn from the <span>coolest</span> coding platform in india.</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolore, ad. Atque soluta recusandae itaque
+                    iste, expedita ea nemo maxime quidem corrupti cum inventore debitis praesentium!</p>
+                <button>register</button>
+            </div>
+
+            <div class="right">
+
+                <img src="https://img.freepik.com/free-vector/hand-coding-concept-illustration_114360-8113.jpg?t=st=1725983456~exp=1725987056~hmac=212906762491aa5deb84a276eb45f5c50816782fe084cc3a22e8fa9c3eeed4cf&w=740"
+                    alt="">
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

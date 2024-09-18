@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/9b204b830f.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gilroy', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center/cover;
+        }
+
+        #main {
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        #main h2 {
+            margin-bottom: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 27px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .input-group i {
+            margin-right: 10px;
+            color: #555;
+        }
+
+        .input-group input {
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        .login_button {
+            font-family: Montserrat;
+            width: 80%;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .login_button:hover {
+            background-color: #0057b3db;
+        }
+
+        .forgot_text {
+            color: rgb(128, 128, 128);
+            font-size: 13px;
+            text-align: right;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: color 0.3s ease;
+        }
+
+        .forgot_text:hover {
+            color: rgba(20, 5, 5, 0.943);
+        }
+
+        .sign_up {
+            font-size: 16px;
+            margin-top: 15%;
+            text-align: center;
+            text-transform: capitalize;
+            font-family: Montserrat;
+            color: rgb(128, 128, 128);
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .sign_up:hover {
+            color: rgba(20, 5, 5, 0.943);
+        }
+
+        .icon {
+            font-size: 29px;
+            transition: transform 0.3s ease;
+            margin: 0;
+        }
+
+        .icon i:hover {
+            transform: scale(1.3);
+        }
+
+        .copyright {
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="main" class="container">
+        <h2>Login</h2>
+
+        <h6>Username</h6>
+        <div class="input-group">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="email" placeholder="Enter the E-mail">
+        </div>
+
+        <h6>Password</h6>
+        <div class="input-group">
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" name="password" placeholder="Enter the Password">
+        </div>
+        <h6 class="forgot_text">Forgot password?</h6>
+        <button class="login_button" type="submit" onclick="showMessage()">LOGIN</button>
+
+        <h6 class="sign_up">or Sign up using</h6>
+
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa fa-google" aria-hidden="true"></i>
+        </div>
+
+        <h6 class="copyright">*BY PG*</h6>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script>
+        function showMessage() {
+            alert('Hello user. You are on login page😁');
+        }
+    </script>
+</body>
+
+</html>

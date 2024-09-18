@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <script src="https://kit.fontawesome.com/9b204b830f.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+          
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Gilroy', sans-serif;
+        }
+
+        body {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: url(https://images.unsplash.com/photo-1579546929518-9e396f3cc809?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center/cover;
+            /* background: url(https://img.freepik.com/free-photo-gradient-lights_23-2149304985.jpg?t=st=1725206005~exp=1725209605~hmac=c3986a39ec395e17d91c40fceff34708791c561029837af46d7d3b3a86f5734b&w=1060) no-repeat center center/cover; */
+        }
+
+        #main {position: relative;
+            box-shadow: 0px 0px 15px rgba(70, 27, 30, 0.808);
+            padding: 20px;
+            width: 25%;
+            height: 80%;
+            /* background-color: rgba(255, 255, 255, 0.8); */
+            border-radius: 10px;
+            /* box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1); */
+            text-align: center;
+        }
+
+        #main h2 {
+            margin-bottom: 20px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 27px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .input-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .input-group i {
+            margin-right: 10px;
+            color: #555;
+        }
+
+        .input-group input {
+            border: none;
+            background: transparent;
+            outline: none;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        #main .login_button {
+            font-family: Montserrat;
+            width: 80%;
+            font-size: 16px;
+            font-weight: 500;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            font-weight: 20px;
+            transition:background-color(0.6, -0.28, 0.735, 0.045) 0.3s ease;
+        }
+
+       #main  .login_button:hover {
+            background-color: #0057b3db;
+        }
+
+        #main h6 {
+
+            font-size: 16px;
+            text-decoration: none;
+            margin-right: 75%;
+            /* margin-bottom: 0%; */
+        }
+
+
+        #main .forgot_text {
+
+            color: rgb(128, 128, 128);
+            font-size: 13px;
+            text-align: right;
+            cursor: pointer;
+            margin-top: 10px;
+           
+            margin-bottom: 10%;
+            margin-right: 0;
+            margin-left: 0;
+            transition: background-color(0.075, 0.82, 0.165, 1) 0.3s ease;
+        }
+        #main .forgot_text:hover {
+          
+            color:rgba(20, 5, 5, 0.943);;
+
+        }
+       #main .sign_up{
+        font-size: 16px;
+        margin-top: 15%;
+        margin-bottom: 10%;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+        text-transform: capitalize ;
+        font-family: Montserrat;
+        color: rgb(128, 128, 128);
+        cursor: pointer;
+
+        transition: background-color(0.075, 0.82, 0.165, 1) 0.3s ease;
+
+       }
+       #main  .sign_up:hover{
+          
+          color:rgba(20, 5, 5, 0.943);;
+
+      }
+
+#main .icon {
+    font-size :29px;
+    transition: transform 0.3s ease;
+    margin: 0px; 
+
+}
+
+#main .icon i:hover {
+    transform: scale(1.3); /* Increases the size of the icon on hover */
+}
+
+#main marquee{
+    font-size: 1.4vw;
+    margin-top: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: 600;   
+
+
+}
+
+
+    </style>
+
+
+<script>
+
+        function showMessage() {
+            alert('Hello user. You are on login page😁');
+        }
+    </script>
+
+    
+
+</head>
+
+<body>
+    <div id="main">
+        <h2>Login</h2>
+
+        <h6> Username</h6>
+        <div class="input-group">
+            <i class="fa fa-user" aria-hidden="true"></i>
+            <input type="text" name="email" placeholder="Enter the E-mail">
+        </div>
+
+        <h6> Password</h6>
+        <div class="input-group">
+            <i class="fa fa-key" aria-hidden="true"></i>
+            <input type="password" name="password" placeholder="Enter the Password">
+        </div>
+        <h6 class="forgot_text">Forgot password? </h6>
+        <button class="login_button" type="submit" onclick="showMessage()">LOGIN</button>
+
+        <h6 class="sign_up"> or Sign up using</h6>
+
+        <div class="icon">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa fa-google" aria-hidden="true"></i>
+
+
+            <marquee class="copyright">*BY PG* </marquee>
+            
+        </div>
+
+
+    </div>
+</body>
+
+</html>
